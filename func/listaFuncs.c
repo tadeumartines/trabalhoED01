@@ -1,4 +1,4 @@
-/*** FUNÇÕES PARA MANIPULAÇÃO DE LISTAS ***/
+/*** FUNÃ‡Ã•ES PARA MANIPULAÃ‡ÃƒO DE LISTAS ***/
 
 #include "listaHeader.h"
 
@@ -8,14 +8,14 @@ struct lista
     struct lista* prox;
 };
 
-/* função de criação: retorna uma lista vazia */
+/* funÃ§Ã£o de criaÃ§Ã£o: retorna uma lista vazia */
 Lista* listaCria(void)
 {
     return NULL;
 }
 
-/* inserção no início: retorna a lista atualizada */
-Lista* listaInsereInicio(Lista* l, int i)					// <<<<<<<<<< Unificar funções de inserção no inicio e meio, apenas uma funções responsável por inserção em qualquer lugar da lista.
+/* inserÃ§Ã£o no inÃ­cio: retorna a lista atualizada */
+Lista* listaInsereInicio(Lista* l, int i)					// <<<<<<<<<< Unificar funÃ§Ãµes de inserÃ§Ã£o no inicio e meio, apenas uma funÃ§Ãµes responsÃ¡vel por inserÃ§Ã£o em qualquer lugar da lista.
 {
     Lista* novo = (Lista*) malloc(sizeof(Lista));
     novo->info = i;
@@ -23,7 +23,7 @@ Lista* listaInsereInicio(Lista* l, int i)					// <<<<<<<<<< Unificar funções de 
     return novo;
 }
 
-/* função imprime: imprime valores dos elementos */
+/* funÃ§Ã£o imprime: imprime valores dos elementos */
 void listaImprime(Lista* l)
 {
     Lista* p;
@@ -31,13 +31,13 @@ void listaImprime(Lista* l)
         printf("info = %d\n", p->info);
 }
 
-/* função vazia: retorna 1 se vazia ou 0 se não vazia */
+/* funÃ§Ã£o vazia: retorna 1 se vazia ou 0 se nÃ£o vazia */
 int listaVazia(Lista* l)
 {
     return (l == NULL);
 }
 
-/* função busca: busca um elemento na lista */
+/* funÃ§Ã£o busca: busca um elemento na lista */
 Lista* listaBusca(Lista* l, int v)
 {
     Lista* p;
@@ -46,12 +46,12 @@ Lista* listaBusca(Lista* l, int v)
         if (p->info == v)
             return p;
     }
-    /* não achou o elemento */
+    /* nÃ£o achou o elemento */
     return NULL;
 }
 
-/* função retira: retira elemento da lista */
-Lista* listaRetira(Lista* l, int v)									// <<<<<<<<<<< Unificar funções de remoção no inicio e meio, apenas uma funções responsável por remoção em qualquer lugar da lista.
+/* funÃ§Ã£o retira: retira elemento da lista */
+Lista* listaRetira(Lista* l, int v)									// <<<<<<<<<<< Unificar funÃ§Ãµes de remoÃ§Ã£o no inicio e meio, apenas uma funÃ§Ãµes responsÃ¡vel por remoÃ§Ã£o em qualquer lugar da lista.
 {
 // ponteiro para elemento anterior
     Lista* ant = NULL;
@@ -65,7 +65,7 @@ Lista* listaRetira(Lista* l, int v)									// <<<<<<<<<<< Unificar funções de r
     }
     /* verifica se achou elemento */
     if (p == NULL)
-        /* não achou: retorna lista original*/
+        /* nÃ£o achou: retorna lista original*/
         return l;
         /* retira elemento */
         if (ant == NULL)
@@ -92,7 +92,7 @@ void listaLibera(Lista* l)
     }
 }
 
-/**** Implementações Stefany Lacroux ****/
+/**** ImplementaÃ§Ãµes Stefany Lacroux ****/
 
 int listaLength (Lista *l)
 {
@@ -118,7 +118,7 @@ int listaLength (Lista *l)
 Lista* listaInseremeio (Lista* l, int num)					// <<<<<<<<<<<<
 {
 	int i, meio, tam;
-	tam = listaLength (l); // Dá o tamanho da lista
+	tam = listaLength (l); // DÃ¡ o tamanho da lista
 	Lista *temp, *aux;
 	Lista *novo = (Lista*) malloc (sizeof(Lista));
 	novo->info = num;
@@ -154,7 +154,7 @@ Lista* listaInseremeio (Lista* l, int num)					// <<<<<<<<<<<<
 Lista* listaRetiraMeio (Lista* l)								// <<<<<<<<<
 {
 	int i, meio, tam;
-	tam = listaLength (l); // Dá o tamanho da lista
+	tam = listaLength (l); // DÃ¡ o tamanho da lista
 	Lista *temp, *aux;
 	
 	temp = l;
