@@ -1,4 +1,4 @@
-/*** FUNÇÕES PARA MANIPULAÇÃO DE PILHAS ***/
+/*** FUNÃ‡Ã•ES PARA MANIPULAÃ‡ÃƒO DE PILHAS ***/
 
 #include "pilhaHeader.h"
 
@@ -14,7 +14,7 @@ Pilha *pilhaCria()
 	return top;
 }
 
-/* Verifica se a pilha está Vazia ou não */
+/* Verifica se a pilha estÃ¡ Vazia ou nÃ£o */
 int pilhaVazia(Pilha *top)
 {
 	if (top == NULL)
@@ -45,7 +45,7 @@ Pilha *PilhaPop(Pilha *top)
 	Pilha *temp;
 
 	if (pilhaVazia(top)) {
-		printf("\n* A pilha está pilhaVazia *.\n");
+		printf("\n* A pilha estÃ¡ pilhaVazia *.\n");
 	} else {
 		temp = top;
 		top = top -> prox;
@@ -59,7 +59,7 @@ Pilha *PilhaPop(Pilha *top)
 void pilhaPeek(Pilha *top)
 {
 	if (pilhaVazia(top))
-		printf("\nImpossível realizar, lista pilhaVazia.\n");
+		printf("\nImpossÃ­vel realizar, lista pilhaVazia.\n");
 	else
 		printf("\nO elemento no topo da pilha: %d\n", top -> info);
 }
