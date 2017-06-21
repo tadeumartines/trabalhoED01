@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* Protótipos */
+/* ProtÃ³tipos */
 void displayMenu(void);
 void displaySubmenu(void);
 
