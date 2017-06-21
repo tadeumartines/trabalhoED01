@@ -6,6 +6,8 @@
 
 /*** INCOMPLETA! SOMENTE PARA TESTES ***/
 
+/*Ediçao de Teste Stefany Lacroux*/
+
 int main(void)
 {
 	int opt;

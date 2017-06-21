@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 	
-typedef struct mainstructure MAIN; 
+/* typedef struct mainstructure MAIN; */  /* Será substituido por ponteiros */
 
 typedef struct estrutura_listas e_lst;
 
