@@ -1,4 +1,4 @@
-/*** FUNLÇÕES PARA DISPLAY DOS MENUS *** (INCOMPLETO!) */   
+/*** FUNLÃ‡Ã•ES PARA DISPLAY DOS MENUS *** (INCOMPLETO!) */   
 
 #include "menuHeader.h"
 
@@ -6,7 +6,7 @@
 void displayMenu()
 {
 	printf("%s\n\n%s\n%s\n%s\n\n%s\n\n",
-		"***** Entre opção desejada*****",
+		"***** Entre opÃ§Ã£o desejada*****",
 			"1 - Criar Lista.",
 			"2 - Criar fila.",
 			"3 - Criar pilha.",
@@ -14,15 +14,15 @@ void displayMenu()
 
 }
 
-// Exibe menu expec�fico de opera��es
+// Exibe menu expecífico de operações
 void displaySubmenu(void)
 {
 	printf("%s\n\n%s\n%s\n%s\n\n%s\n\n",
-		"***** Entre opção desejada*****",
+		"***** Entre opÃ§Ã£o desejada*****",
 			"1 - Inserir elemento.",				
 			"2 - Retirar elemento.",				
 			"3 - Liberar lista.",							
 			/*"4 - Mover elemento.", ELIMINAR */					
-			"4 - Editar conteúdo de um elemento.",	
+			"4 - Editar conteÃºdo de um elemento.",	
 		"*******************************");	
 }
